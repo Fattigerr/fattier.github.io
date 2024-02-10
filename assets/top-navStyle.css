@@ -1,0 +1,108 @@
+/* 基础设置 */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  border: 0;
+}
+
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/* #region顶部导航条 */
+.bg-img {
+   background-image: url("../images/myname.jpg");
+   min-height: 300px;
+
+   /* Center and scale the image nicely */
+   background-position: bottom center ;
+   background-repeat: no-repeat;
+   background-size: cover;
+ 
+   /* Needed to position the navbar */
+   position: relative;
+ }
+
+.weblogo {
+  padding: 30px 0;
+}
+
+.weblogo a {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.weblogo a:hover {
+  color: purple;
+}
+
+.weblogo a:active {
+  color: orange;
+}
+
+.topbar-nav {
+  padding: 30px 0;
+}
+ 
+.topbar-nav a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.topbar-nav a:hover {
+  color: purple;
+}
+
+.topbar-nav a:active {
+  color: orange;
+}
+/* #endregion顶部导航条end */
+
+
+
+/* #region页脚 */
+.footer .container .weblogo {
+  width: 300px;
+}
+
+.media {
+  width: 560px;
+  padding: 30px 0;
+}
+
+
+.media .bilibili img{
+  width: 35px;
+  height: 35px;
+  margin: 0 10px;
+}
+
+.media .github img{
+  width: 35px;
+  height: 35px;
+  margin: 0 10px;
+}
+
+.description{
+  width: 300px;
+  padding: 30px 0;
+}
+
+.description p{
+  font-size: 20px;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.copyright p{
+  color: white;
+  text-align: center;
+}
+
+/* #endregion页脚end */

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动练习</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .leftfix {
+            float: left;
+        }
+        .rightleft {
+            float: right;
+        }
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .weblogo {
+            width: 200px;
+        }
+        .center {
+            width: 540px;
+            margin: 0 10px;
+        }
+        .index {
+            width: 200px;
+        }
+        .weblogo,.center,.index {
+            height: 80px;
+            background-color: #ccc;
+            line-height: 80px;
+        }
+        .menu {
+            height: 30px;
+            background-color: #ccc;
+            margin: 10px 0;
+            line-height: 30px;
+        }
+        .item1,.item2 {
+            width: 368px;
+            height: 198px;
+            border: 1px solid black;
+            margin-right: 10px;
+            line-height: 198px;
+        }
+        .item3,.item4,.item5,.item6 {
+            width: 178px;
+            height: 198px;
+            border: 1px solid black;
+            line-height: 198px;
+            margin-right: 10px;
+        }
+        .bottom {
+            margin-top: 10px;
+        }
+        .item7,.item8,.item9 {
+            width: 198px;
+            height: 128px;
+            border: 1px solid black;
+            line-height: 128px;
+        }
+        .item8 {
+            margin: 10px 0;
+        }
+        .footer {
+            height: 60px;
+            background-color: #ccc;
+            margin-top: 10px;
+            line-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部导航栏 -->
+    <div class="container">
+        <div class="page-header clearfix">
+            <div class="weblogo leftfix">weblogo</div>
+            <div class="center leftfix">center</div>
+            <div class="index leftfix">about</div>  
+        </div>
+        <!-- 菜单栏 -->
+        <div class="menu">菜单</div>
+        <div class="container clearfix">
+            <!-- 左浮动 -->
+            <div class="left leftfix">
+                <!-- up -->
+                <div class="top clearfix">
+                    <div class="item1 leftfix">栏目一</div>
+                    <div class="item2 leftfix">栏目二</div>
+                </div>
+                <!-- down -->
+                <div class="bottom clearfix">
+                    <div class="item3 leftfix">栏目三</div>
+                    <div class="item4 leftfix">栏目四</div>
+                    <div class="item5 leftfix">栏目五</div>
+                    <div class="item6 leftfix">栏目六</div>
+                </div>
+            </div>
+            <!-- 右浮动 -->
+            <div class="right rightleft">
+                <div class="item7">栏目七</div>
+                <div class="item8">栏目八</div>
+                <div class="item9">栏目九</div>
+            </div>
+        </div>
+        <div class="footer">页脚</div>
+        
+    </div>
+</body>
+</html>
